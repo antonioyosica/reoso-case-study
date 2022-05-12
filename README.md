@@ -4,8 +4,6 @@
 
 ----------
 
-# Getting started
-
 ## Project Setup
 
 **Starting command list**
