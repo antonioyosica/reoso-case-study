@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h2 style="text-align:center;margin-top:50px;">REO.so Matcher Microservice Case Study Solution</h2><p style="text-align:center;position:fixed;bottom:30px;width:100%;">By <b>António Yosica</b></p>';
 });

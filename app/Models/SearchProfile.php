@@ -10,4 +10,9 @@ class SearchProfile extends Model
     use HasFactory;
     
     protected $table = 'search_profile';
+    
+    public function searchField()
+    {
+        return $this->hasOne(SearchField::class, 'id', 'fields');
+    }
 }

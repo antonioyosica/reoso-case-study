@@ -11,4 +11,9 @@ class PropertyField extends Model
     
     protected $table = 'property_field';
     protected $keyType = 'string';
+    
+    public function property()
+    {
+        return $this->belongsTo(Property::class, 'fields', 'id');
+    }
 }

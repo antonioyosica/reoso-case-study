@@ -10,4 +10,9 @@ class Property extends Model
     use HasFactory;
     
     protected $table = 'property';
+    
+    public function propertyField()
+    {
+        return $this->hasOne(PropertyField::class, 'id', 'fields');
+    }
 }

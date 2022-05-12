@@ -15,16 +15,11 @@ class CreateSearchFieldsTable extends Migration
     {
         Schema::create('search_field', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->decimal('price_start', 8, 2)->nullable();
-            $table->decimal('price_end', 8, 2)->nullable();
-            $table->integer('area_start')->nullable();
-            $table->integer('area_end')->nullable();
-            $table->integer('year_construction_start')->nullable();
-            $table->integer('year_construction_end')->nullable();
-            $table->integer('rooms_start')->nullable();
-            $table->integer('rooms_end')->nullable();
-            $table->decimal('return_actual_start', 8, 2)->nullable();
-            $table->decimal('return_actual_end', 8, 2)->nullable();
+            $table->string('price')->nullable();
+            $table->string('area')->nullable();
+            $table->string('year_construction')->nullable();
+            $table->string('rooms')->nullable();
+            $table->string('return_actual')->nullable();
             $table->timestamps();
         });
     }
