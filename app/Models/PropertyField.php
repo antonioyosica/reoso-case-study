@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class PropertyField extends Model
 {
-    use HasFactory;
-    
-    protected $table = 'property_field';
-    protected $keyType = 'string';
-    
-    public function property()
-    {
-        return $this->belongsTo(Property::class, 'fields', 'id');
-    }
+  use HasFactory;
+
+  protected $table = 'property_field';
+  protected $keyType = 'string';
+
+  public function property()
+  {
+    return $this->belongsTo(Property::class, 'fields', 'id');
+  }
 }

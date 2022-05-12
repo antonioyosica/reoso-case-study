@@ -6,26 +6,26 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePropertyTypesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('property_type', function (Blueprint $table) {
-            $table->uuid('id')->primary();
-            $table->string('name');
-        });
-    }
+  /**
+  * Run the migrations.
+  *
+  * @return void
+  */
+  public function up()
+  {
+    Schema::create('property_type', function (Blueprint $table) {
+      $table->uuid('id')->primary();
+      $table->string('name');
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('property_type');
-    }
+  /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+  public function down()
+  {
+    Schema::dropIfExists('property_type');
+  }
 }

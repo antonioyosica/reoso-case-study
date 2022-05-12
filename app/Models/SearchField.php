@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class SearchField extends Model
 {
-    use HasFactory;
-    
-    protected $table = 'search_field';
-    protected $keyType = 'string';
-    
-    public function searchProfile()
-    {
-        return $this->belongsTo(SearchProfile::class, 'fields', 'id');
-    }
+  use HasFactory;
+
+  protected $table = 'search_field';
+  protected $keyType = 'string';
+
+  public function searchProfile()
+  {
+    return $this->belongsTo(SearchProfile::class, 'fields', 'id');
+  }
 }

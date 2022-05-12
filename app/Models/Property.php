@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
 {
-    use HasFactory;
-    
-    protected $table = 'property';
-    
-    public function propertyField()
-    {
-        return $this->hasOne(PropertyField::class, 'id', 'fields');
-    }
+  use HasFactory;
+
+  protected $table = 'property';
+
+  public function propertyField()
+  {
+    return $this->hasOne(PropertyField::class, 'id', 'fields');
+  }
 }
